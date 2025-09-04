@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background: linear-gradient(135deg, #1f2937, #4b5563);
+    color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Label emoji */
+body > span {
+    margin-bottom: 0.5rem;
+}
+
+/* Input e botão */
+input#vel {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+
+input#vel:focus {
+    box-shadow: 0 0 8px #3b82f6;
+}
+
+/* Botão */
+button#verificar {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button#verificar:hover {
+    background: #3b82f6;
+    transform: scale(1.05);
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 2rem;
+    padding: 16px;
+    border-radius: 12px;
+    min-width: 300px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Alertas de velocidade */
+#resultado.normal {
+    background: #16a34a; /* verde */
+    color: white;
+}
+
+#resultado.atencao {
+    background: #eab308; /* amarelo */
+    color: black;
+}
+
+#resultado.multa {
+    background: #dc2626; /* vermelho */
+    color: white;
+    animation: shake 0.3s ease;
+}
+
+/* Pequena animação de shake */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
