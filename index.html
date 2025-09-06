@@ -9,11 +9,19 @@
 </head>
 <body>
     <h1>  👮‍♂️ Sistema da Multas 👮‍♂️</h1>
-  🚗Velocidade do Veiculo:
-   <input id="vel" type="number" placeholder = "Digite sua Velocidade">
-   <button id="verificar">verificar</button>
-   <div id="resultado"> </div>
-   
+<label for="vel">🚗 Velocidade do Veículo:</label>
+<input id="vel" type="number" placeholder="Digite sua Velocidade">
+
+<label for="vias">🛣️ Tipo de Via:</label>
+<select id="vias">
+  <option value="avenida">Avenida</option>
+  <option value="Rodovia">Rodovia</option>
+</select>
+
+<button id="verificar">Verificar</button>
+<div id="resultado"></div>
+
+
 
     <script src = "src/main.js" ></script>
 
